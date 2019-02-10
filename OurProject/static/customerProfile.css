@@ -1360,3 +1360,11 @@ body{margin-top:20px;}
 .grey {
     color: #777!important
 }
+
+.logo {
+  background: url("../static/rsz_logo.jpg") no-repeat top left;
+  width: 150px;
+  height: 150px;
+  display: block;
+  text-indent:-9999px;
+}

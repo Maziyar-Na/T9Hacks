@@ -78,13 +78,13 @@
   margin: 50px auto;
   text-align: center;
 }
-.container .info h1 {
+/* .container .info h1 {
   margin: 0 0 15px;
   padding: 0;
   font-size: 36px;
   font-weight: 300;
   color: #1a1a1a;
-}
+} */
 .container .info span {
   color: #4d4d4d;
   font-size: 12px;
@@ -97,12 +97,74 @@
   color: #EF3B3A;
 }
 body {
-  background: #76b852; /* fallback for old browsers */
-  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+  /* background: #76b852; /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(right, #76b852, #8DC26F);
   background: -moz-linear-gradient(right, #76b852, #8DC26F);
   background: -o-linear-gradient(right, #76b852, #8DC26F);
-  background: linear-gradient(to left, #76b852, #8DC26F);
+  background: linear-gradient(to left, #76b852, #8DC26F); */ */
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+  /* background: rgba(76, 175, 80, 0.3); */
+  /* background-image: repeating-linear-gradient(red, yellow 10%, green 20%); */
+
+}
+
+body::after {
+  content: "";
+  background: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
+/* .hometitle {
+  background-color: white;
+  align: center;
+  border: 10px solid #3F704D;
+  padding: 1px;
+  margin: auto;
+  width: 40%;
+}
+
+h1 {
+  font-family: sans-serif;
+  color: #3F704D;
+  font-size: 40px;
+} */
+
+span {
+  font-size: 3em;
+  background-color: white;
+  align: center;
+  border: 10px solid #3F704D;
+  padding: 10px;
+  margin: auto;
+  width: 40%;
+  font-family: sans-serif;
+  color: #3F704D;
+}
+
+span b {
+  font-size: 120%;
+}
+
+.logo {
+  background: url("../static/rsz_logo.jpg") no-repeat top left;
+  width: 150px;
+  height: 150px;
+  display: block;
+  text-indent:-9999px;
 }
